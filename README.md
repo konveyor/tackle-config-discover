@@ -4,12 +4,12 @@ Tackle Config Discover (TCD) is the application configuration management server.
 
 TCD provides two APIs.
 
-- Crawl (REST API): ```GET http://<host_name>:<port_number>/collect?repo=<github_url>```
+- Crawl (REST API)
   - Download target application source codes from GitHub
   - Extract a set of application configuration data from the codes
   - Store configuration data as canonical format:
   
-- Query (Web Socket): ```ws://<host_name>:<port_number>/gremlin```
+- Query (Web Socket) 
   - Acquire a set of canonical application configuration data.
 
 <img src="./docs/tcd-architecture.png" width=80%>
@@ -29,4 +29,4 @@ $ docker-compose up -d
 
 ## Data model in canonical configuration DB
 
-<img src="./docs/models.png" width=100%>
+<img src="./docs/models.png" width=70%>
