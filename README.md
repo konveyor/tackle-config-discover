@@ -10,7 +10,7 @@ TCD provides two APIs.
   - Store configuration data as canonical format:
   
 - Query (Web Socket): ```ws://<host_name>:<port_number>/gremlin```
-  - Acqure a set of canonical application configuration data.
+  - Acquire a set of canonical application configuration data.
 
 <img src="./docs/tcd-architecture.png" width=80%>
 
@@ -20,7 +20,7 @@ TCD provides two APIs.
 
 ## Getting Started
 
-1. Execute the following command for build docker images and launching the server.
+1. Execute the following command for building docker images and launching the server.
 ```
 $ docker-compose up -d
 ```
@@ -29,4 +29,4 @@ $ docker-compose up -d
 
 ## Data model in canonical configuration DB
 
-<img src="./docs/models.svg" width=60%>
+<img src="./docs/models.png" width=100%>
