@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+  tcd-windup:
+    build:
+      context: .
+    image: tcd-windup
+    restart: always
+
+  nginx:
+    build:
+      context: script/
+      dockerfile: Dockerfile.nginx
+    image: tcd-nginx
+    restart: always
+    ports:
+      - 8180:80
